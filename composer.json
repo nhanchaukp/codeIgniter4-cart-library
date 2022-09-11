@@ -1,8 +1,8 @@
 {
-  "name": "jason-napolitano/codeigniter4-cart-module",
+  "name": "nhanchaukp/codeigniter4-cart-library",
   "type": "library",
   "description": "A basic port of the codeigniter 3 cart module for CodeIgniter 4.",
-  "homepage": "https://github.com/jason-napolitano/CodeIgniter4-Cart-Module",
+  "homepage": "https://github.com/nhanchaukp/codeigniter4-cart-library",
   "license": "MIT",
   "version": "1.1.0",
   "require": {
