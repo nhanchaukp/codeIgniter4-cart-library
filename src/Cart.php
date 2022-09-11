@@ -466,6 +466,20 @@ class Cart
         return ( $n === '' ) ? '' : number_format((float)$n, 2);
     }
 
+    
+    /**
+     * Format Vietnamese dong
+     *
+     * Returns the supplied number with commas and a decimal point.
+     *
+     * @param string $n
+     * @return string
+     */
+    public function formatVnd($n = ''): string
+    {
+        return ( $n === '' ) ? '' : number_format($n, 0, '.', '.') . 'đ';
+    }
+
     // ------------------------------------------------------------------------
 
     /**
