@@ -53,6 +53,9 @@ $psr4 = [
 // Get the total items. Formerly known as total_items()
 $cart->totalItems();
 
+// Format Vietnamese dong
+$cart->formatVnd($number);
+
 // Remove an item using its `rowid`
 $cart->remove('4166b0e7fc8446e81e16883e9a812db8');
    
