@@ -419,7 +419,32 @@ class Cart
             ? false
             : $this->cartContents[ $row_id ];
     }
+    
+    // ------------------------------------------------------------------------
 
+    /**
+     * Find cart item
+     *
+     * Returns the details of a specific item in the cart
+     *
+     * @param $key
+     * @param $value
+     * @return bool|mixed
+     */
+    public function find($key, $value)
+    {
+        if($this->totalItems() == 0){
+            return false;
+        }else{
+            foreach($this->cartContents as $row){
+                if(isset($row[$key]) && $row[$key] == $value){
+                    return $row;
+                }
+            }
+            return false;
+        }
+    }
+    
     // ------------------------------------------------------------------------
 
     /**
