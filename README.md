@@ -1,4 +1,4 @@
-# CodeIgniter4-Cart-Module
+# CodeIgniter4-Cart-Library
 > This is a `composer` installable, CodeIgniter 4 module that is nearly a direct port of the Codeigniter 3 Cart Library Class.
 > Of course, this has been mildly updated and is consistent with the new version of the framework.
 > 
@@ -16,11 +16,11 @@
 > just the same.
 
 ## Installation:
- - Install via composer `composer require jason-napolitano/codeigniter4-cart-module`
+ - Install via composer `composer require nhanchaukp/codeigniter4-cart-library`
  - Add it to the `$psr4` array in `app/Config/Autoload.php`:
  ```php
 $psr4 = [
-    'CodeIgniterCart' => ROOTPATH . 'vendor/jason-napolitano/codeigniter4-cart-module/src'
+    'CodeIgniterCart' => ROOTPATH . 'vendor/nhanchaukp/codeigniter4-cart-library/src'
 
     // OTHER PSR4 ENTRIES
 ];
@@ -52,6 +52,10 @@ $psr4 = [
 
 // Get the total items. Formerly known as total_items()
 $cart->totalItems();
+
+// Find item
+$cart->find($key, $value);
+Ex: $cart->find('id', 'sku_1234ABCD');
 
 // Format Vietnamese dong
 $cart->formatVnd($number);
